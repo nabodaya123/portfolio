@@ -1,0 +1,30 @@
+[
+  {
+    "title": "ShopPilot AI",
+    "category": "web",
+    "image": "assets/shoppilot.png",
+    "demo": "https://your-shoppilot-demo.com",
+    "description": "Agentic shopping assistant that turns a goal into a ready-to-buy cart.",
+    "tags": [
+      "JavaScript",
+      "AI/LLM",
+      "Full Stack"
+    ],
+    "link": "https://github.com/nabodaya123/ShopPilot"
+  },
+  {
+  "title": "Spotify Clone: Music Web Player",
+  "category": "web",
+  "image": "assets/clone.png",
+  "demo": "",
+  "description": "A responsive music streaming interface with a playlist library, trending sections, and a player bar.",
+  "points": ["Playlist library and trending sections", "Play, skip, shuffle, repeat and volume", "Responsive layout"],
+  "tags": [
+    "HTML", 
+    "CSS"
+  ],
+  "link": "https://github.com/nabodaya123/Spotify-clone"
+}
+ 
+  
+]

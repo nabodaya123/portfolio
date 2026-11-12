@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nabodaya Sahu | Web Developer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="trail" aria-hidden="true"></canvas>
+  <div class="bgglow"></div>
+
+  <div class="wrap">
+    <nav>
+      <div class="pills" id="pills">
+        <a href="#home" class="on">Home</a>
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#projects">Projects</a>
+        <a href="#internships">Internships</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div>
+        <span class="status"><i></i>Open to new opportunities</span>
+        <h1>Nabodaya<span>Sahu</span></h1>
+        <div class="roles">Web Developer / AI-ML / Full-Stack</div>
+        <p class="bio">B.Tech CSE student at Techno Main Salt Lake in Kolkata. I build full-stack apps with React,
+          Node.js, Express and MongoDB, and I am learning AI/ML and data structures.</p>
+        <div class="btns">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="assets/Nabodaya_Sahu_Resume.pdf" download="Nabodaya_Sahu_Resume.pdf">Download CV</a>
+          <a class="btn" href="https://github.com/nabodaya123" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+        <div class="stats">
+          <div><b>2028</b><small>Graduation</small></div>
+          <div><b>7.5</b><small>CGPA</small></div>
+          <div><b>MERN</b><small>Main stack</small></div>
+          <div><b>SIH</b><small>Hackathon participant</small></div>
+        </div>
+      </div>
+      <div class="portrait">
+        <span class="mono">NS</span>
+        <img src="assets/photo.jpeg" alt="Nabodaya Sahu" onerror="this.remove()">
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>Clear, secure and responsive web apps</h2>
+      <div class="about" style="margin-top:1.6rem">
+        <div class="about-left">
+          <p>I am a Computer Science undergraduate who builds full-stack applications with the MERN stack, with
+            a growing focus on AI/ML.</p>
+          <p>My recent project, Wanderlust, turns a plain-language goal Booking Room into a ready-to-book reservation.</p>
+          <p>I have taken part in Smart India Hackathon and college hackathons, and I am looking for chances to build
+            and learn on real projects.</p>
+          <div class="edu">
+            <div class="edu-ico">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 10 12 5 2 10l10 5 10-5z" />
+                <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+                <path d="M22 10v6" />
+              </svg>
+            </div>
+            <div>
+              <h3>B.Tech in Computer Science and Engineering (Data Science)</h3>
+              <p>Techno Main Salt Lake, Kolkata</p>
+              <span>Graduation · 2028</span>
+            </div>
+          </div>
+        </div>
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          <div class="card">
+            <div class="ico">01</div>
+            <h3>Frontend</h3>
+            <p>HTML5, CSS3, React.js and Tailwind CSS.</p>
+          </div>
+          <div class="card">
+            <div class="ico">02</div>
+            <h3>Backend</h3>
+            <p>Node.js and Express.js APIs.</p>
+          </div>
+          <div class="card">
+            <div class="ico">03</div>
+            <h3>Database</h3>
+            <p>MongoDB and MySQL.</p>
+          </div>
+          <div class="card">
+            <div class="ico">04</div>
+            <h3>Core CS</h3>
+            <p>DSA, OOP, DBMS, OS and networks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <h2>Technical stack</h2>
+      <p class="lede">The languages and tools I build with.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="tags"><span>C</span><span>C++</span><span>JavaScript</span><span>Python</span><span>Java</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Frontend</h3>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>React.js</span><span>Tailwind CSS</span></div>
+        </div>
+        <div class="card">
+          <h3>Backend and databases</h3>
+          <div class="tags"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>MySQL</span></div>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Docker</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p class="lede">A collection of thoughtful builds—AI-powered, modular, and responsive. Every project reflects my
+        passion for clarity, design, automation, and secure engineering across devices and real-world developer
+        workflows.</p>
+      <div class="grid" id="projgrid"></div>
+    </section>
+
+    <section id="internships">
+      <h2>Internship experience</h2>
+      <p class="lede">Hands-on engineering roles, virtual simulations, and technical internships.</p>
+      <!-- <div class="exp-list">
+
+        <article class="card exp-card">
+          <div class="exp-head">
+            <div class="exp-title">
+              <div class="exp-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <div>
+                <h3>GEN-AI Virtual Internship</h3>
+                <span class="exp-sub">AWS Academy — Generative AI &amp; Cloud Foundations · 2025</span>
+              </div>
+            </div>
+            <span class="exp-badge">Virtual Internship</span>
+          </div>
+          <p class="exp-desc">
+            Completed hands-on labs and architectural modules covering Large Language Models (LLMs), prompt engineering,
+            foundation model deployment, and cloud-based AI workflows on AWS.
+          </p>
+          <div class="tags">
+            <span>Generative AI</span>
+            <span>AWS Cloud</span>
+            <span>Prompt Engineering</span>
+            <span>LLM Workflows</span>
+          </div>
+        </article>
+      </div> -->
+    </section>
+
+    <section id="credentials">
+      <h2>Certificates &amp; Activities</h2>
+      <p class="lede">Verified certifications, hackathons, and technical events.</p>
+      <div class="cert-grid" id="credentials-grid"></div>
+    </section>
+
+    <section id="reviews">
+      <h2>Recommendations</h2>
+      <p class="lede">Add real quotes from teachers, teammate, or clients, with their permission.</p>
+      <div class="grid">
+        <div class="card">
+          <p>“Creative thinking, consistent learning, and a genuine passion for solving real-world problems.”</p>
+          <div class="tags"><span>M.DasMahapatra, TMSL</span></div>
+        </div>
+        <div class="card">
+          <p>“Quote from a real person about working with you.”</p>
+          <div class="tags"><span>Name, Role</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's build something</h2>
+      <p class="lede">Available for web development work and collaboration.</p>
+      <div class="contact">
+        <div class="card info">
+          <dl>
+            <div>
+              <dt>Email</dt>
+              <dd>sahunabodaya@gmail.com</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd>+91 86373 89843</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Kolkata, India</dd>
+            </div>
+          </dl>
+          <div class="social">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/nabodaya-sahu-904a41340" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/nabodaya123" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/nabodaya_06?xtok=NW1mb3Rrb215amdu" target="_blank" rel="noopener"
+              aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" />
+              </svg>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/nabodaya.sahu" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.438H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.49 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+              </svg>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://x.com/NabodayaS2006" target="_blank" rel="noopener" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M18.9 2H22l-6.78 7.75L23.2 22h-6.25l-4.9-7.39L5.6 22H2.45l7.25-8.29L1.8 2h6.4l4.43 6.76L18.9 2zm-1.1 18h1.73L7.28 3.9H5.42L17.8 20z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <form class="card" id="form">
+          <label>Name<input id="f-name" required></label>
+          <label>Email<input id="f-email" type="email" required></label>
+          <label class="full">Subject<input id="f-subject"></label>
+          <label class="full">Message<textarea id="f-msg" required></textarea></label>
+          <div class="full"><button class="btn primary" type="submit" style="cursor:pointer">Send message</button></div>
+          <div id="note" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <h3>© 2026 Nabodaya | made with ❤️ 𝑁𝑎𝑏𝑜𝑑𝑎𝑦𝑎 𝑆𝑎ℎ𝑢</h3>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
