@@ -13,6 +13,21 @@
     "link": "https://github.com/nabodaya123/ShopPilot"
   },
   {
+    "title": "Developer Portfolio – Personal Branding Website",
+    "category": "Frontend Development",
+    "image": "assets/portfolio.png",
+    "demo": "https://nabodaya.vercel.app/",
+    "description": "A modern, responsive developer portfolio showcasing technical skills, projects, professional experience, achievements, and contact information through an interactive user interface.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design"
+    ],
+    "link": "https://github.com/nabodaya123/portfolio"
+  },
+  {
   "title": "Spotify Clone: Music Web Player",
   "category": "web",
   "image": "assets/clone.png",
@@ -25,6 +40,4 @@
   ],
   "link": "https://github.com/nabodaya123/Spotify-clone"
 }
- 
-  
 ]
